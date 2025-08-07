@@ -1,16 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hello, world!</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
 </head>
-<body>
-    <h1>Hello Pirate</h1>
-    <h2>GG</h2>
+<body class="bg-gray-100 text-gray-900 p-6">
+
+  <h1 class="text-3xl font-bold mb-6">Hello, world!</h1>
+
+  <div class="grid grid-cols-12 gap-4">
+    <div class="col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
+    <div class="col-span-8 bg-cyan-300 p-4 rounded">One of three</div>
+    <div class="col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
+  </div>
+
 </body>
 </html>
