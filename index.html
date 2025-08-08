@@ -1,37 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello, world!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: "JetBrains Mono", monospace;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100 text-black-900 p-6">
+    <div class="container mx-auto flex-grow">
+      <!-- Image + Name with Home/About under the name -->
+      <div class="flex flex-col items-center mt-6">
+        <!-- Group wrapper for hover effect -->
+        <div class="flex gap-4 items-start group cursor-pointer">
+          <img
+            src="img/en1.png"
+            alt="Profile"
+            class="h-[60px] w-auto filter grayscale group-hover:grayscale-0 transition-all"
+          />
+          <div class="flex flex-col items-start">
+            <h1 class="text-[24px] font-extrabold">Nasim Mahmud Mishu</h1>
+            <ul class="flex gap-3 mt-1">
+              <li
+                class="text-[14px] text-[#2bbc8a] hover:underline cursor-pointer border-r border-[#2bbc8a] pr-4"
+              >
+                Home
+              </li>
+              <li
+                class="text-[14px] text-[#2bbc8a] hover:underline cursor-pointer"
+              >
+                About
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-  <title>Hello, world!</title>
+      <!-- Social Links -->
+      <div class="flex justify-center gap-6 mb-6 mt-4">
+        <span>Find me on</span>
+        <a href="#" class="text-blue-500 hover:underline">Linkedin</a>
+        <a href="#" class="text-blue-500 hover:underline">Facebook</a>
+        <a href="#" class="text-blue-500 hover:underline">Whatsapp</a>
+      </div>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Content Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div class="md:col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
+        <div class="md:col-span-8 p-4 rounded">
+          <div>
+            <h2 class="text-[24px] font-bold text-[#2bbc8a]">Education</h2>
+            <ul>
+              Options
+            </ul>
+            <ul>
+              Options
+            </ul>
+            <ul>
+              Options
+            </ul>
+            <ul>
+              Options
+            </ul>
+          </div>
+          <div>Education</div>
+          <div>Education</div>
+          <div>Education</div>
+        </div>
+        <div class="md:col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
+      </div>
+    </div>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: 'JetBrains Mono', monospace;
-    }
-  </style>
-</head>
-<body class="bg-gray-100 text-gray-900 p-6">
-
-  <h1 class="text-3xl font-bold mb-6">Hello, world!</h1>
-
-  <div class="grid grid-cols-12 gap-4">
-    <div class="col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
-    <div class="col-span-8 bg-cyan-300 p-4 rounded">One of three</div>
-    <div class="col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
-  </div>
-
-</body>
+    <!-- Footer -->
+    <div class="bg-teal-200 text-center p-4 rounded">
+      &copy; 2025, All rights reserved
+    </div>
+  </body>
 </html>
