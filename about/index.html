@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nasim Mahmud Mishu</title>
-    <link rel="icon" sizes="16x16" href="..\img\en1.png">
+    <link rel="icon" sizes="16x16" href="..\img\en1.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +17,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
     <style>
+      /* Chrome, Safari, Opera */
+      html::-webkit-scrollbar,
+      body::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      /* Optional: class to hide scrollbar on a specific element */
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
       body {
         font-family: "JetBrains Mono", monospace;
+        -ms-overflow-style: none; /* IE and older Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      p {
+        font-size: 15px;
+      }
+      li {
+        font-size: 15px;
       }
     </style>
   </head>
-  <body class="flex flex-col min-h-screen bg-gray-100 text-black-900 p-6">
+  <body
+    class="flex flex-col min-h-screen bg-gray-100 text-black-900 overflow-auto no-scrollbar"
+  >
     <div class="container mx-auto flex-grow">
       <!-- Image + Name with Home/About under the name -->
       <div class="flex flex-col items-center mt-6">
@@ -54,13 +80,22 @@
       <!-- Social Links -->
       <div class="flex justify-center gap-1.5 mb-12 mt-6">
         <span>Find me on</span>
-        <a href="#" target="=_blank" class="text-black-500 hover:underline hover:text-[#2bbc8a]"
-          ><i class="fa-brands fa-square-linkedin"></i
-        ></a>,
-        <a href="#" target="=_blank" class="text-black-500 hover:underline hover:text-[#2bbc8a]"
-          ><i class="fa-brands fa-github"></i
-        ></a>, and
-        <a href="mailto:nasimmahmud1301@gmail.com" target="=_blank" class="text-black-500 hover:underline hover:text-[#2bbc8a]"
+        <a
+          href="#"
+          target="=_blank"
+          class="text-black-500 hover:underline hover:text-[#2bbc8a]"
+          ><i class="fa-brands fa-square-linkedin"></i></a
+        >,
+        <a
+          href="#"
+          target="=_blank"
+          class="text-black-500 hover:underline hover:text-[#2bbc8a]"
+          ><i class="fa-brands fa-github"></i></a
+        >, and
+        <a
+          href="mailto:nasimmahmud1301@gmail.com"
+          target="=_blank"
+          class="text-black-500 hover:underline hover:text-[#2bbc8a]"
           ><i class="fa-solid fa-envelope"></i
         ></a>
       </div>
@@ -84,22 +119,139 @@
               Lorem Ipsum.
             </p>
           </div>
+
+          <!-- Education -->
           <div>
             <h2 class="text-[24px] font-bold text-[#2bbc8a] pb-4">Education</h2>
-            <ul>
-              Options
+            <ul class="pb-4 space-y-1">
+              <li class="flex justify-between font-[600]">
+                <span>North South University</span>
+                <span>Dhaka, Bangladesh</span>
+              </li>
+              <li class="flex font-thin text-black-700 justify-between">
+                <span
+                  >Bachelor of Science(BSc) in Computer Science and
+                  Engineering</span
+                >
+                <span>May 2017- December 2021</span>
+              </li>
+              <li class="font-thin text-gray-500">
+                Thesis: Autonomous Obstacle Avoiding Exploring Robot (AOAVER)
+              </li>
             </ul>
-            <ul>
-              Options
+
+            <ul class="pb-4 space-y-1">
+              <li class="flex justify-between font-semibold">
+                <span>Rajshahi College</span>
+                <span>Rajshahi, Bangladesh</span>
+              </li>
+              <li class="flex justify-between font-thin text-black-700">
+                <span>Higher Secondary School Certificate(HSC)</span>
+                <span>July 2013- July 2015</span>
+              </li>
+              <li class="font-[100] text-gray-500">Group: Science</li>
             </ul>
-            <ul>
-              Options
-            </ul>
-            <ul>
-              Options
+
+            <ul class="pb-4 space-y-1">
+              <li class="flex justify-between font-semibold">
+                <span>Govt. Laboratory High School</span>
+                <span>Rajshahi, Bangladesh</span>
+              </li>
+              <li class="flex justify-between font-thin text-black-700">
+                <span>Secondary School Certificate (SSC)</span>
+                <span>January 2005- December 2012</span>
+              </li>
+              <li class="font-[100] text-gray-500">Group: Science</li>
             </ul>
           </div>
-          <div>Education</div>
+
+          <!-- Experience -->
+          <div>
+            <h2 class="text-[24px] font-bold text-[#2bbc8a] pb-4 pt-6">
+              Experience
+            </h2>
+            <ul class="pb-4 space-y-1">
+              <li class="flex justify-between font-[600]">
+                <span>Research assistant</span>
+                <span>Dhaka, Bangladesh</span>
+              </li>
+              <li class="flex font-thin text-black-700 justify-between">
+                <span>NSU Intelligent Robotics(NIRO) Laboratory</span>
+                <span>October 2024- Present</span>
+              </li>
+              <li class="flex font-thin text-black-700 justify-between pb-2">
+                Dept. of Electrical and Computer Engineering, North South
+                University
+              </li>
+              <li class="font-thin text-gray-500 pb-2">
+                <p>
+                  <b class="text-black underline">Research Area:</b>
+                  Swarm robotics with a focus on centralized and decentralized
+                  control systems
+                </p>
+                <p>
+                  <b class="text-black underline">Primary Assignment:</b>
+                  Research on swarm robotics architectures, exploring both
+                  centralized and decentralized control strategies. Integrating
+                  machine learning techniques to enhance swarm behavior,
+                  coordination, and adaptability in dynamic environments.
+                </p>
+              </li>
+            </ul>
+
+            <ul class="pb-4 space-y-1">
+              <li class="flex justify-between font-[600]">
+                <span>Part-time research assistant</span>
+                <span>Dhaka, Bangladesh</span>
+              </li>
+              <li class="flex font-thin text-black-700 justify-between pb-2">
+                <span
+                  >Dept. of Electrical and Computer Engineering, North South
+                  University</span
+                >
+                <span>December 2023- June 2024</span>
+              </li>
+              <li class="font-thin text-gray-500 pb-2">
+                <p>
+                  <b class="text-black underline">Research Area:</b>
+                  Resource-efficient visual Deep Reinforcement Learning (DRL)
+                  <br />
+                  for autonomous agents and robots.
+                </p>
+                <p>
+                  <b class="text-black underline">Primary Assignment:</b>
+                  Utilize machine learning models and analyze and produce custom
+                  datasets for feature extraction. My current work involves
+                  determining the best approaches for segmentation-based vision
+                  in autonomous agents.
+                </p>
+              </li>
+            </ul>
+
+            <ul class="pb-4 space-y-1">
+              <li class="flex justify-between font-semibold">
+                <span>Founding member</span>
+                <span>Dhaka, Bangladesh</span>
+              </li>
+              <li class="flex justify-between font-thin text-black-700 pb-2">
+                <span>NSU Ignite, North South University</span>
+                <span>September 2018- February 2022</span>
+              </li>
+              <li class="font-thin text-gray-500">
+                <p>
+                  <b class="text-black underline">Primary Assignment:</b>
+                  Participate on the robotics competition, designing and
+                  constructing both remote-controlled and autonomous robots.
+                </p>
+                <p>
+                  <b class="text-black underline">Additional Assignment:</b>
+                  Sharing knowledge through engaging workshops for aspiring
+                  enthusiasts.
+                </p>
+              </li>
+            </ul>
+          </div>
+
           <div>Education</div>
           <div>Education</div>
         </div>
@@ -108,8 +260,8 @@
     </div>
 
     <!-- Footer -->
-    <div class="bg-teal-200 text-center p-4 rounded">
-      Copyrights &copy; 2025, All rights reserved.
+    <div class="bg-teal-200 text-center text-xs font-thin p-4 rounded">
+      Copyright &copy; 2025, Nasim Mahmud Mishu, All rights reserved.
     </div>
   </body>
 </html>
