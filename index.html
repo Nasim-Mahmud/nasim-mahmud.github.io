@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nasim Mahmud Mishu</title>
-    <link rel="icon" sizes="16x16" href="img\en1.png">
+    <link rel="icon" sizes="16x16" href="img/en1.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +17,45 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
     <style>
+      /* Chrome, Safari, Opera */
+      html::-webkit-scrollbar,
+      body::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      /* Optional: class to hide scrollbar on a specific element */
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
       body {
         font-family: "JetBrains Mono", monospace;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
-      h2 {
-        /* -webkit-text-stroke: .5px black; */
+
+      p,
+      li {
+        font-size: 15px;
       }
     </style>
   </head>
-  <body class="flex flex-col min-h-screen bg-gray-100 text-black-900">
+
+  <body class="flex flex-col min-h-screen text-black-900">
     <div class="container mx-auto flex-grow">
       <!-- Image + Name with Home/About under the name -->
       <div class="flex flex-col items-center mt-6">
         <!-- Group wrapper for hover effect -->
         <div class="flex gap-4 items-start group cursor-pointer">
           <img
-            src="img\en1.png"
+            src="img/en1.png"
             alt="Profile"
             class="h-[60px] transform -scale-x-100 w-auto filter grayscale group-hover:grayscale-0 transition-all"
           />
@@ -40,12 +63,12 @@
             <h1 class="text-[24px] font-extrabold">Nasim Mahmud Mishu</h1>
             <ul class="flex gap-3 mt-1">
               <li
-                class="text-[14px] text-[#2bbc8a] hover:underline cursor-pointer border-r border-[#2bbc8a] pr-4"
+                class="text-[14px] text-[#660000] hover:underline cursor-pointer border-r border-[#660000] pr-4"
               >
                 <a href="/">Home</a>
               </li>
               <li
-                class="text-[14px] text-[#2bbc8a] hover:underline cursor-pointer"
+                class="text-[14px] text-[#660000] hover:underline cursor-pointer"
               >
                 <a href="/about/">About</a>
               </li>
@@ -57,40 +80,65 @@
       <!-- Social Links -->
       <div class="flex justify-center gap-1.5 mb-12 mt-6">
         <span>Find me on</span>
-        <a href="#" target="=_blank" class="text-black-500 hover:underline hover:text-[#2bbc8a]"
-          ><i class="fa-brands fa-square-linkedin"></i
-        ></a>,
-        <a href="#" target="=_blank" class="text-black-500 hover:underline hover:text-[#2bbc8a]"
-          ><i class="fa-brands fa-github"></i
-        ></a>, and
-        <a href="mailto:nasimmahmud1301@gmail.com" target="=_blank" class="text-black-500 hover:underline hover:text-[#2bbc8a]"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+        <a
+          href="https://www.linkedin.com/in/nasim-mahmud/"
+          target="_blank"
+          class="text-black-500 hover:underline hover:text-[#660000]"
+        >
+          <i class="fa-brands fa-square-linkedin"></i> </a
+        >,
+        <a
+          href="https://github.com/Nasim-Mahmud"
+          target="_blank"
+          class="text-black-500 hover:underline hover:text-[#660000]"
+        >
+          <i class="fa-brands fa-github"></i> </a
+        >, and
+        <a
+          href="mailto:nasimmahmud1301@gmail.com"
+          target="_blank"
+          class="text-black-500 hover:underline hover:text-[#660000]"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
 
       <!-- Content Grid -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div class="md:col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
+
         <div class="md:col-span-8 p-4 rounded">
-          <div>
-            <h2 class="text-[24px] font-bold text-[#2bbc8a] pb-4">Projects</h2>
-            <ul>
-              Options
-            </ul>
-            <ul>
-              Options
-            </ul>
-            <ul>
-              Options
-            </ul>
-            <ul>
-              Options
+          <!-- Projects -->
+          <div class="pb-10">
+            <h2 class="text-[24px] font-bold text-[#660000] pb-4">Projects</h2>
+
+            <ul class="pb-6 space-y-1">
+              <li class="flex justify-between font-[600]">
+                Autonomous Obstacle Avoiding Exploring Robot - AOAVER
+              </li>
+              <li class="flex font-thin text-[#383838] justify-between">
+                CSE499: Capstone Design Project, North South University
+              </li>
+              <li class="flex font-thin text-[#383838] justify-between">
+                Summer 2021 — Spring 2022
+              </li>
+              <li class="text-[#383838] font-thin">
+                <p>
+                  <b class="underline">Primary Assignment:</b>
+                  Support course delivery on robotics fundamentals, covering
+                  kinematics, motion planning, perception, and control. Guide
+                  students, assess homework, and invigilate exams to ensure
+                  effective learning and skill development.
+                </p>
+              </li>
             </ul>
           </div>
+
           <div>Education</div>
           <div>Education</div>
           <div>Education</div>
         </div>
+
         <div class="md:col-span-2 bg-cyan-200 p-4 rounded">One of three</div>
       </div>
     </div>
@@ -101,4 +149,3 @@
     </div>
   </body>
 </html>
-
