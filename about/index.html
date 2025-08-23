@@ -58,33 +58,39 @@
   >
     <div class="container mx-auto flex-grow">
       <!-- Image + Name with Home/About under the name -->
-      <div class="flex flex-col items-center mt-[64px]">
+      <div class="flex flex-col items-center mt-[64px] px-4 md:px-0">
         <!-- Group wrapper for hover effect -->
-        <div class="flex gap-4 items-start group cursor-pointer">
+        <div
+          class="flex flex-col md:flex-row gap-4 items-center md:items-start group cursor-pointer max-w-full md:max-w-none"
+        >
           <img
-            src="..\img\en1.png"
+            src="../img/en1.png"
             alt="Profile"
-            class="h-[50px] transform -scale-x-100 w-auto filter grayscale group-hover:grayscale-0 transition-all"
+            class="h-[50px] w-auto transform -scale-x-100 filter grayscale group-hover:grayscale-0 transition-all mb-2 md:mb-0"
           />
-          <div class="flex flex-col items-start">
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
             <h1 class="text-[24px] font-extrabold text-[#102E50]">
               Nasim Mahmud Mishu
             </h1>
-            <ul class="flex gap-3 mt-1">
+            <ul
+              class="flex flex-wrap gap-3 mt-1 justify-center md:justify-start text-[14px] text-[#660000]"
+            >
               <li
-                class="text-[14px] text-[#660000] hover:underline cursor-pointer border-r border-[#660000] pr-4"
+                class="hover:underline cursor-pointer border-r border-[#660000] pr-4 last:border-none last:pr-0"
               >
                 <a href="../">Home</a>
               </li>
               <li
-                class="text-[14px] text-[#660000] hover:underline cursor-pointer border-r border-[#660000] pr-4"
+                class="hover:underline cursor-pointer border-r border-[#660000] pr-4 last:border-none last:pr-0"
               >
                 <a href="/about">About</a>
               </li>
-              <li
-                class="text-[14px] text-[#660000] hover:underline cursor-pointer"
-              >
-                <a href="/demo.pdf" target="_blank">CV</a>
+              <li class="hover:underline cursor-pointer">
+                <a href="/demo.pdf" target="_blank" rel="noopener noreferrer"
+                  >CV</a
+                >
               </li>
             </ul>
           </div>
@@ -92,7 +98,7 @@
       </div>
 
       <!-- Social Links -->
-      <div class="flex justify-center gap-1.5 mb-12 mt-6 text-[#383838]">
+      <div class="flex justify-center gap-1.5 md:mb-12 mt-6 text-[#383838]">
         <span>Find me on</span>
         <a
           href="https://www.linkedin.com/in/nasim-mahmud/"
@@ -116,40 +122,56 @@
 
       <!-- Content Grid -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div class="md:col-span-2 bg-white p-4 rounded"></div>
+        <div class="md:col-span-2 bg-white rounded"></div>
         <div class="md:col-span-8 p-4 rounded">
-          <div class="pb-10">
-            <h2 class="text-[24px] font-bold text-[#660000] pb-4">Overview</h2>
-            <p class="font-thin text-[#383838]">
-              He is a researcher passionate about building intelligent machines
-              that work together to solve complex problems. His projects span
-              from disaster response robots to assistive technologies, combining
-              innovation, teamwork, and a drive to create systems that adapt to
-              real-world challenges. Currently, he is researching swarm robotics
-              with a focus on both centralized and decentralized control
-              systems.
-            </p>
-            <br />
-            <p>
-              In his personal life, he enjoys playing football and collecting
-              coins, with a particular fondness for the colors cyan and teal.
-              During leisure time, he engages in deep discussions about games
-              with his father. Although he does not have a favorite flower, he
-              finds butterflies unpredictable and frightening, yet is fascinated
-              by the concept of
-              <a
-                href="https://en.wikipedia.org/wiki/Butterfly_effect"
-                target="_blank"
-                ><u>"The butterfly effect",</u></a
-              >
-              this fascination inspired him to write a
-              <a
-                href="https://medium.com/@NasimMahmud/বাটারফ্লাই-ইফেক্ট-ও-ভবিষ্যতের-অ-আ-ক-খ-bdea98d3fce6"
-                target="_blank"
-                ><u> short story</u></a
-              >
-              about it a few years ago.
-            </p>
+          <!-- Overview -->
+          <div
+            class="pb-10 flex flex-col-reverse md:flex-row md:justify-between md:items-start"
+          >
+            <div class="md:max-w-[70%]">
+              <h2 class="text-[24px] font-bold text-[#660000] pb-4">
+                Overview
+              </h2>
+              <p class="font-thin text-[#383838]">
+                He is a researcher passionate about building intelligent
+                machines that work together to solve complex problems. His
+                projects span from disaster response robots to assistive
+                technologies, combining innovation, teamwork, and a drive to
+                create systems that adapt to real-world challenges. Currently,
+                he is researching swarm robotics with a focus on both
+                centralized and decentralized control systems.
+              </p>
+              <br />
+              <p>
+                In his personal life, he enjoys playing football and collecting
+                coins, with a particular fondness for the colors cyan and teal.
+                During leisure time, he engages in deep discussions about games
+                with his father. Although he does not have a favorite flower, he
+                finds butterflies unpredictable and frightening, yet is
+                fascinated by the concept of
+                <a
+                  href="https://en.wikipedia.org/wiki/Butterfly_effect"
+                  target="_blank"
+                  ><u>"The butterfly effect",</u></a
+                >
+                this fascination inspired him to write a
+                <a
+                  href="https://medium.com/@NasimMahmud/বাটারফ্লাই-ইফেক্ট-ও-ভবিষ্যতের-অ-আ-ক-খ-bdea98d3fce6"
+                  target="_blank"
+                  ><u> short story</u></a
+                >
+                about it a few years ago.
+              </p>
+            </div>
+            <div
+              class="mt-0 mb-6 md:mt-10 md:ml-6 md:max-w-[30%] flex-shrink-0 self-center md:self-start w-40 h-40 md:w-full md:h-auto"
+            >
+              <img
+                src="/img/me.png"
+                alt="Profile Picture"
+                class="rounded-full w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <!-- Research & Experience -->
@@ -159,23 +181,23 @@
             </h2>
 
             <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600]">
+              <li class="flex flex-col md:flex-row justify-between font-[600]">
                 <span>Teaching assistant</span>
-                <span>2025- Present</span>
+                <span class="md:ml-4">2025- Present</span>
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="font-thin text-[#383838]">
                 Dept. of ECE, North South University, Dhaka, Bangladesh
               </li>
               <li class="font-thin text-[#383838]">
-                <div class="flex">
+                <div>
                   <b class="underline mr-2">Course:</b>
                   <div>
-                    <div class="flex">
-                      <span class="w-24">Spring'25</span>
+                    <div class="flex flex-col md:flex-row md:gap-4">
+                      <span class="w-28 md:w-24 block">Spring'25</span>
                       <span>(EE494/ CSE495A: Introduction to robotics)</span>
                     </div>
-                    <div class="flex">
-                      <span class="w-24">Summer'25</span>
+                    <div class="flex flex-col md:flex-row md:gap-4">
+                      <span class="w-28 md:w-24 block">Summer'25</span>
                       <span
                         >(EE494/ CSE495A, CSE543: Introduction to
                         robotics)</span
@@ -197,14 +219,14 @@
             </ul>
 
             <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600]">
+              <li class="flex flex-col md:flex-row justify-between font-[600]">
                 <span>Research assistant</span>
-                <span>2024- Present</span>
+                <span class="md:ml-4">2024- Present</span>
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
-                <span>NSU Intelligent Robotics(NIRO) Laboratory</span>
+              <li class="font-thin text-[#383838]">
+                NSU Intelligent Robotics (NIRO) Laboratory
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="font-thin text-[#383838]">
                 Dept. of ECE, North South University, Dhaka, Bangladesh
               </li>
               <li class="font-thin">
@@ -213,25 +235,16 @@
                   Swarm robotics with a focus on centralized and decentralized
                   control systems.
                 </p>
-                <!-- <p>
-                  <b class="text-black underline">Primary Assignment:</b>
-                  Research on swarm robotics architectures, exploring both
-                  centralized and decentralized control strategies. Integrating
-                  machine learning techniques to enhance swarm behavior,
-                  coordination, and adaptability in dynamic environments.
-                </p> -->
               </li>
             </ul>
 
             <ul class="space-y-1">
-              <li class="flex justify-between font-[600]">
+              <li class="flex flex-col md:flex-row justify-between font-[600]">
                 <span>Part-time research assistant</span>
-                <span>2023- 2024</span>
+                <span class="md:ml-4">2023- 2024</span>
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
-                <span
-                  >Dept. of ECE, North South University, Dhaka, Bangladesh</span
-                >
+              <li class="font-thin text-[#383838]">
+                Dept. of ECE, North South University, Dhaka, Bangladesh
               </li>
               <li class="font-thin">
                 <p>
@@ -240,13 +253,6 @@
                   for autonomous <br />
                   agents and robots.
                 </p>
-                <!-- <p>
-                  <b class="text-black underline">Primary Assignment:</b>
-                  Utilize machine learning models and analyze and produce custom
-                  datasets for feature extraction. My current work involves
-                  determining the best approaches for segmentation-based vision
-                  in autonomous agents.
-                </p> -->
               </li>
             </ul>
           </div>
@@ -254,15 +260,18 @@
           <!-- Education -->
           <div class="pb-10">
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">Education</h2>
+
             <ul class="pb-6 space-y-1">
-              <li class="flex font-[600] text-black-700 justify-between">
+              <li
+                class="flex flex-col md:flex-row justify-between font-semibold text-black"
+              >
                 <span
-                  >Bachelor of Science(BSc) in Computer Science and
+                  >Bachelor of Science (BSc) in Computer Science and
                   Engineering</span
                 >
-                <span>2017- 2021</span>
+                <span class="md:ml-4">2017 - 2021</span>
               </li>
-              <li class="flex justify-between font-thin text-[#383838]">
+              <li class="font-thin text-[#383838]">
                 North South University, Dhaka, Bangladesh
               </li>
               <li class="font-thin">
@@ -271,31 +280,35 @@
               </li>
               <li class="font-thin">
                 <b class="underline text-[#383838]">Relevant Coursework:</b>
-                Machine Learning, Artificial Intelligence(AI), Robotics,
+                Machine Learning, Artificial Intelligence (AI), Robotics,
                 Computer Vision.
               </li>
             </ul>
 
             <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-semibold">
-                <span>Higher Secondary School Certificate(HSC)</span>
-                <span>2013- 2015</span>
+              <li
+                class="flex flex-col md:flex-row justify-between font-semibold"
+              >
+                <span>Higher Secondary School Certificate (HSC)</span>
+                <span class="md:ml-4">2013 - 2015</span>
               </li>
-              <li class="flex justify-between font-thin text-[#383838]">
-                <span>Rajshahi College, Rajshahi, Bangladesh</span>
+              <li class="font-thin text-[#383838]">
+                Rajshahi College, Rajshahi, Bangladesh
               </li>
-              <li class="font-[100]">Group: Science</li>
+              <li class="font-thin font-extralight">Group: Science</li>
             </ul>
 
             <ul class="space-y-1">
-              <li class="flex justify-between font-semibold">
-                <span>Secondary School Certificate(SSC)</span>
-                <span>2005- 2012</span>
+              <li
+                class="flex flex-col md:flex-row justify-between font-semibold"
+              >
+                <span>Secondary School Certificate (SSC)</span>
+                <span class="md:ml-4">2005 - 2012</span>
               </li>
-              <li class="flex justify-between font-thin text-[#383838]">
-                <span>Govt. Laboratory High School, Rajshahi, Bangladesh</span>
+              <li class="font-thin text-[#383838]">
+                Govt. Laboratory High School, Rajshahi, Bangladesh
               </li>
-              <li class="font-[100]">Group: Science</li>
+              <li class="font-thin font-extralight">Group: Science</li>
             </ul>
           </div>
 
@@ -304,58 +317,50 @@
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">
               Extracurricular Activities
             </h2>
+
             <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-semibold">
+              <li
+                class="flex flex-col md:flex-row justify-between font-semibold"
+              >
                 <span>Founding member</span>
-                <span>2018- 2022</span>
+                <span class="md:ml-4">2018 - 2022</span>
               </li>
-              <li class="flex justify-between font-thin text-[#383838]">
-                <span
-                  >NSU Ignite, robotics team, North South University, Dhaka,
-                  Bangladesh</span
-                >
+              <li class="font-thin text-[#383838]">
+                NSU Ignite, robotics team, North South University, Dhaka,
+                Bangladesh
               </li>
               <li class="font-thin">
                 <p>
                   <b class="text-[#383838] underline">Primary Assignment:</b>
                   Take part in robotics competitions by designing and building
-                  both <br />remote-controlled and autonomous robots, while also
-                  sharing expertise through <br />
+                  both <br />
+                  remote-controlled and autonomous robots, while also sharing
+                  expertise through <br />
                   interactive workshops for aspiring enthusiasts.
                 </p>
-                <!-- <p>
-                  <b class="text-black underline">Additional Assignment:</b>
-                  Sharing knowledge through engaging workshops for aspiring
-                  enthusiasts.
-                </p> -->
               </li>
             </ul>
+
             <ul class="space-y-1">
-              <li class="flex justify-between font-[600]">
+              <li
+                class="flex flex-col md:flex-row justify-between font-semibold"
+              >
                 <span>General member</span>
-                <span>2018- 2019</span>
+                <span class="md:ml-4">2018 - 2019</span>
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
-                <span>NSU ACM Student Chapter</span>
-              </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="font-thin text-[#383838]">NSU ACM Student Chapter</li>
+              <li class="font-thin text-[#383838]">
                 North South University, Dhaka, Bangladesh
               </li>
               <li class="font-thin">
                 <p>
                   <b class="text-[#383838] underline">About NSU ACM:</b>
                   The NSU ACM Student Chapter promotes computing by fostering
-                  academic and <br />professional growth, encouraging
-                  innovation, and building practical skills through events<br />
+                  academic and <br />
+                  professional growth, encouraging innovation, and building
+                  practical skills through events<br />
                   like the annual Technovation competition.
                 </p>
-                <!-- <p>
-                  <b class="text-black underline">Primary Assignment:</b>
-                  Research on swarm robotics architectures, exploring both
-                  centralized and decentralized control strategies. Integrating
-                  machine learning techniques to enhance swarm behavior,
-                  coordination, and adaptability in dynamic environments.
-                </p> -->
               </li>
             </ul>
           </div>
@@ -365,54 +370,67 @@
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">
               Technical Skills
             </h2>
-            <ul class="space-y-1">
-              <li class="flex">
-                <b class="font-semibold w-[11em] flex-shrink-0">Programming:</b>
-                <span class="text-[#383838]">Python, C</span>
-              </li>
-              <li class="flex">
-                <b class="font-semibold w-[11em] flex-shrink-0"
-                  >Machine Learning:</b
+            <ul class="space-y-2">
+              <li class="flex flex-col md:flex-row md:items-start">
+                <b
+                  class="font-semibold w-full md:w-[11em] flex-shrink-0 mb-1 md:mb-0"
                 >
+                  Programming:
+                </b>
+                <span class="text-[#383838]"> Python, C </span>
+              </li>
+              <li class="flex flex-col md:flex-row md:items-start">
+                <b
+                  class="font-semibold w-full md:w-[11em] flex-shrink-0 mb-1 md:mb-0"
+                >
+                  Machine Learning:
+                </b>
                 <span class="text-[#383838]">
                   Outlier Detection, Time Series Forecasting, Information
-                  Retrieval, Customer <br />
+                  Retrieval, Customer <br class="md:hidden" />
                   Segmentation, Statistical Learning Models
                 </span>
               </li>
-              <li class="flex">
-                <b class="font-semibold w-[11em] flex-shrink-0"
-                  >Data Science:</b
+              <li class="flex flex-col md:flex-row md:items-start">
+                <b
+                  class="font-semibold w-full md:w-[11em] flex-shrink-0 mb-1 md:mb-0"
                 >
+                  Data Science:
+                </b>
                 <span class="text-[#383838]">
                   Data Manipulation, Data Visualization, Interpreting Data,
-                  Modeling Data, <br />
+                  Modeling Data, <br class="md:hidden" />
                   Testing Hypotheses, Quantitative Analysis
                 </span>
               </li>
-              <li class="flex">
-                <b class="font-semibold w-[11em] flex-shrink-0"
-                  >Web & Database:</b
+              <li class="flex flex-col md:flex-row md:items-start">
+                <b
+                  class="font-semibold w-full md:w-[11em] flex-shrink-0 mb-1 md:mb-0"
                 >
-                <span class="text-[#383838]"
-                  >HTML, CSS, TailwindCSS, MySQL</span
-                >
+                  Web & Database:
+                </b>
+                <span class="text-[#383838]">
+                  HTML, CSS, TailwindCSS, MySQL
+                </span>
               </li>
-              <li class="flex">
-                <b class="font-semibold w-[11em] flex-shrink-0">Tools:</b>
-                <span class="text-[#383838]">Git, Anaconda, LaTeX</span>
+              <li class="flex flex-col md:flex-row md:items-start">
+                <b
+                  class="font-semibold w-full md:w-[11em] flex-shrink-0 mb-1 md:mb-0"
+                >
+                  Tools:
+                </b>
+                <span class="text-[#383838]"> Git, Anaconda, LaTeX </span>
               </li>
             </ul>
           </div>
         </div>
-
-        <div class="md:col-span-2 bg-white p-4 rounded"></div>
       </div>
     </div>
 
     <!-- Footer -->
-    <div class="text-center text-xs font-thin pt-14 pb-6 rounded">
+    <div class="text-center text-[10px] md:text-xs font-thin md:pt-14 pb-6 rounded px-4 md:px-0">
       Copyright &copy; 2025, Nasim Mahmud Mishu, All rights reserved.
     </div>
+    
   </body>
 </html>

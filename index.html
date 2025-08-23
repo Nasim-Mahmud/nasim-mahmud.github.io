@@ -51,33 +51,39 @@
   <body class="flex flex-col min-h-screen text-[#383838]">
     <div class="container mx-auto flex-grow">
       <!-- Image + Name with Home/About under the name -->
-      <div class="flex flex-col items-center mt-[64px]">
+      <div class="flex flex-col items-center mt-[64px] px-4 md:px-0">
         <!-- Group wrapper for hover effect -->
-        <div class="flex gap-4 items-start group cursor-pointer">
+        <div
+          class="flex flex-col md:flex-row gap-4 items-center md:items-start group cursor-pointer max-w-full md:max-w-none"
+        >
           <img
-            src="img/en1.png"
+            src="../img/en1.png"
             alt="Profile"
-            class="h-[50px] transform -scale-x-100 w-auto filter grayscale group-hover:grayscale-0 transition-all"
+            class="h-[50px] w-auto transform -scale-x-100 filter grayscale group-hover:grayscale-0 transition-all mb-2 md:mb-0"
           />
-          <div class="flex flex-col items-start">
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
             <h1 class="text-[24px] font-extrabold text-[#102E50]">
               Nasim Mahmud Mishu
             </h1>
-            <ul class="flex gap-3 mt-1">
+            <ul
+              class="flex flex-wrap gap-3 mt-1 justify-center md:justify-start text-[14px] text-[#660000]"
+            >
               <li
-                class="text-[14px] text-[#660000] hover:underline cursor-pointer border-r border-[#660000] pr-4"
+                class="hover:underline cursor-pointer border-r border-[#660000] pr-4 last:border-none last:pr-0"
               >
-                <a href="/">Home</a>
+                <a href="../">Home</a>
               </li>
               <li
-                class="text-[14px] text-[#660000] hover:underline cursor-pointer border-r border-[#660000] pr-4"
+                class="hover:underline cursor-pointer border-r border-[#660000] pr-4 last:border-none last:pr-0"
               >
-                <a href="/about/">About</a>
+                <a href="/about">About</a>
               </li>
-              <li
-                class="text-[14px] text-[#660000] hover:underline cursor-pointer"
-              >
-                <a href="/demo.pdf" target="_blank">CV</a>
+              <li class="hover:underline cursor-pointer">
+                <a href="/demo.pdf" target="_blank" rel="noopener noreferrer"
+                  >CV</a
+                >
               </li>
             </ul>
           </div>
