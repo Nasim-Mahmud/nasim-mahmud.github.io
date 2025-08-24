@@ -91,29 +91,26 @@
       </div>
 
       <!-- Social Links -->
-      <div class="flex justify-center gap-1.5 mb-12 mt-6 text-[16px]">
+      <div class="flex justify-center gap-1.5 md:mb-12 mt-6 text-[#383838]">
         <span>Find me on</span>
         <a
           href="https://www.linkedin.com/in/nasim-mahmud/"
-          target="_blank"
+          target="=_blank"
           class="text-black-500 hover:underline hover:text-[#660000]"
-        >
-          <i class="fa-brands fa-square-linkedin"></i> </a
+          ><i class="fa-brands fa-square-linkedin"></i></a
         >,
         <a
           href="https://github.com/Nasim-Mahmud"
-          target="_blank"
+          target="=_blank"
           class="text-black-500 hover:underline hover:text-[#660000]"
-        >
-          <i class="fa-brands fa-github"></i> </a
+          ><i class="fa-brands fa-github"></i></a
         >, and
         <a
           href="mailto:nasimmahmud1301@gmail.com"
-          target="_blank"
+          target="=_blank"
           class="text-black-500 hover:underline hover:text-[#660000]"
-        >
-          <i class="fa-solid fa-envelope"></i>
-        </a>
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
       </div>
 
       <!-- Content Grid -->
@@ -126,13 +123,16 @@
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">Projects</h2>
 
             <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600]">
+              <li class="font-[600]">
+                <!-- Just bold text stacked at all sizes -->
                 Autonomous Obstacle Avoiding Exploring Robot - AOAVER
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li
+                class="md:flex md:justify-between md:font-thin text-[#383838]"
+              >
                 CSE499: Capstone Design Project, North South University
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
                 Summer 2021 — Spring 2022
               </li>
               <li class="text-[#383838] font-thin space-y-1">
@@ -153,13 +153,13 @@
             </ul>
 
             <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600]">
+              <li class="md:flex md:justify-between font-[600]">
                 Assist seniors and disabled with hand gesture recognition
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
                 CSE299: Junior Design Course, North South University
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
                 Spring 2020
               </li>
               <li class="text-[#383838] font-thin space-y-1">
@@ -187,7 +187,7 @@
               Publications
             </h2>
 
-            <ul class="pb-6 space-y-1">
+            <!-- <ul class="pb-6 space-y-1">
               <li class="flex justify-between font-[600] hover:underline">
                 <a
                   href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
@@ -215,10 +215,49 @@
                 </p>
               </li>
               <li><span class="underline">ISBN:</span> 978-0-9942763-2-2</li>
+            </ul> -->
+            <ul class="pb-6 space-y-1 mx-auto">
+              <li class="md:flex md:justify-between font-[600] hover:underline">
+                <a
+                  href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
+                  target="_blank"
+                  >Understanding the Healthcare Sector in Bangladesh:
+                  Experiences and Services during the COVID-19 Pandemic</a
+                >
+              </li>
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
+                Special proceddings, April 2022
+              </li>
+              <li class="font-thin text-[#383838]">
+                <span class="underline">Conference:</span> 6th Asian CHI
+                Symposium 2022 - At: New Orleans, LA
+              </li>
+              <li class="text-[#383838] font-thin space-y-1">
+                <p>
+                  <b class="underline">Summary:</b>
+                  This study explores the healthcare challenges faced by
+                  Bangladeshis, exacerbated by the COVID-19 pandemic, through
+                  interviews with 32 individuals. It identifies issues like
+                  difficulty finding doctors and lack of medication price
+                  transparency, suggesting online platforms as potential
+                  solutions.
+                </p>
+              </li>
+
+              <li class="break-words max-w-full md:px-0">
+                <span class="underline">DOI:</span>
+                <a
+                  href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
+                  target="_blank"
+                  class="text-[#660000] hover:underline"
+                >
+                  978-0-9942763-2-2
+                </a>
+              </li>
             </ul>
 
-            <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600] hover:underline">
+            <ul class="pb-6 space-y-1 mx-auto">
+              <li class="md:flex md:justify-between font-[600] hover:underline">
                 <a
                   href="https://www.worldscientific.com/doi/10.1142/S2196888820500219"
                   target="_blank"
@@ -226,7 +265,7 @@
                   with Obstacle Detection and Avoiding System</a
                 >
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
                 June 2020
               </li>
               <li class="font-thin text-[#383838]">
@@ -244,19 +283,25 @@
                   efficient.
                 </p>
               </li>
-              <li>
+              <li class="break-words max-w-full md:px-0">
                 <span class="underline">DOI:</span>
-                https://doi.org/10.1142/S2196888820500219
+                <a
+                  href="https://doi.org/10.1142/S2196888820500219"
+                  target="_blank"
+                  class="text-[#660000] hover:underline"
+                >
+                  https://doi.org/10.1142/S2196888820500219
+                </a>
               </li>
             </ul>
 
-            <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600] hover:underline">
-                <a href="https://arxiv.org/abs/2002.11913" target="_blank"
-                  >Alpha-N: Shortest Path Finder Automated Delivery Robot</a
-                >
+            <ul class="pb-6 space-y-1 mx-auto">
+              <li class="md:flex md:justify-between font-[600] hover:underline">
+                <a href="https://arxiv.org/abs/2002.11913" target="_blank">
+                  Alpha-N: Shortest Path Finder Automated Delivery Robot
+                </a>
               </li>
-              <li class="flex font-thin text-[#383838] justify-between">
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
                 March 2020
               </li>
               <li class="font-thin text-[#383838]">
@@ -272,13 +317,18 @@
                   tool for safe and reliable deliveries.
                 </p>
               </li>
-              <li>
+              <li class="break-words max-w-full md:px-0">
                 <span class="underline">DOI:</span>
-                https://doi.org/10.1007/978-3-030-41964-6_18
+                <a
+                  href="https://doi.org/10.1007/978-3-030-41964-6_18"
+                  target="_blank"
+                  class="text-[#660000] hover:underline"
+                >
+                  https://doi.org/10.1007/978-3-030-41964-6_18
+                </a>
               </li>
             </ul>
           </div>
-
         </div>
 
         <div class="md:col-span-2 bg-white p-4 rounded"></div>
@@ -286,8 +336,10 @@
     </div>
 
     <!-- Footer -->
-    <div class="bg-white text-center text-xs font-thin p-4 rounded">
-      Copyright &copy; 2025, Nasim Mahmud Mishu, All rights reserved.
+    <div
+      class="text-center text-[10px] md:text-xs font-thin md:pt-14 pb-6 rounded px-4 md:px-0"
+    >
+      Copyright &copy; 2025, Nasim Mahmud, All rights reserved.
     </div>
   </body>
 </html>
