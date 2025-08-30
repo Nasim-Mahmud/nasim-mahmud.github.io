@@ -16,39 +16,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
-    <style>
-      /* Chrome, Safari, Opera */
-      html::-webkit-scrollbar,
-      body::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
 
-      /* Optional: class to hide scrollbar on a specific element */
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-
-      .no-scrollbar::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
-
-      body {
-        font-family: "JetBrains Mono", monospace;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-
-      p,
-      li {
-        font-size: 15px;
-      }
-    </style>
+    <link rel="stylesheet" href="css\style.css" />
   </head>
 
   <body class="flex flex-col min-h-screen text-[#383838]">
+    <!-- Night mode button -->
+    <button id="toggleDark">🌙</button>
+
     <div class="container mx-auto flex-grow">
       <!-- Image + Name with Home/About under the name -->
       <div class="flex flex-col items-center mt-[64px] px-4 md:px-0">
@@ -64,7 +39,7 @@
           <div
             class="flex flex-col items-center md:items-start text-center md:text-left"
           >
-            <h1 class="text-[24px] font-extrabold text-[#102E50]">
+            <h1 class="text-[24px] font-extrabold text-black">
               Nasim Mahmud Mishu
             </h1>
             <ul
@@ -91,26 +66,28 @@
       </div>
 
       <!-- Social Links -->
-      <div class="flex justify-center gap-1.5 md:mb-12 mt-6 text-[#383838]">
-        <span>Find me on</span>
-        <a
-          href="https://www.linkedin.com/in/nasim-mahmud/"
-          target="=_blank"
-          class="text-black-500 hover:underline hover:text-[#660000]"
-          ><i class="fa-brands fa-square-linkedin"></i></a
-        >,
-        <a
-          href="https://github.com/Nasim-Mahmud"
-          target="=_blank"
-          class="text-black-500 hover:underline hover:text-[#660000]"
-          ><i class="fa-brands fa-github"></i></a
-        >, and
-        <a
-          href="mailto:nasimmahmud1301@gmail.com"
-          target="=_blank"
-          class="text-black-500 hover:underline hover:text-[#660000]"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+      <div>
+        <p class="flex justify-center gap-1.5 md:mb-12 mt-6 text-[#383838]">
+          <span>Find me on</span>
+          <a
+            href="https://www.linkedin.com/in/nasim-mahmud/"
+            target="=_blank"
+            class="text-black-500 hover:underline hover:text-[#660000]"
+            ><i class="fa-brands fa-square-linkedin"></i></a
+          >,
+          <a
+            href="https://github.com/Nasim-Mahmud"
+            target="=_blank"
+            class="text-black-500 hover:underline hover:text-[#660000]"
+            ><i class="fa-brands fa-github"></i></a
+          >, and
+          <a
+            href="mailto:nasimmahmud1301@gmail.com"
+            target="=_blank"
+            class="text-black-500 hover:underline hover:text-[#660000]"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </p>
       </div>
 
       <!-- Content Grid -->
@@ -124,27 +101,36 @@
               In progress
             </h2>
 
+            <!-- NIRO Edu Bot -->
             <ul class="pb-6 space-y-1">
               <li class="font-[600]">
                 <!-- Just bold text stacked at all sizes -->
-                Lorem Ipsum
+                <h3>NIRO Educational Bot</h3>
               </li>
               <li
                 class="md:flex md:justify-between md:font-thin text-[#383838]"
               >
-                Lorem Ipsum
+                <h4>
+                  Research Project Funded under NSU Intelligent Robotics (NIRO)
+                  Lab
+                </h4>
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Summer 2021 — Spring 2022
+                <h4>October 2024 — Present</h4>
               </li>
               <li class="text-[#383838] font-thin space-y-1">
                 <p>
                   <b class="underline">Description:</b>
-                  Lorem Ipsum
+                  Frequent natural disasters in densely populated Bangladesh
+                  pose dangers for human exploration. To aid search and rescue,
+                  we developed AOAVER, an autonomous robot that navigates
+                  obstacles and explores disaster zones, providing invaluable
+                  assistance in hazardous situations.
                 </p>
                 <p>
                   <b class="underline">Tech used:</b>
-                  Lorem Ipsum
+                  Python, YDLidar X4, Raspberry Pi 3B+, Arduino IDE, Linux OS,
+                  ROS
                 </p>
               </li>
             </ul>
@@ -234,18 +220,19 @@
           <div class="pb-6">
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">Projects</h2>
 
+            <!-- AOAVER -->
             <ul class="pb-6 space-y-1">
               <li class="font-[600]">
                 <!-- Just bold text stacked at all sizes -->
-                Autonomous Obstacle Avoiding Exploring Robot - AOAVER
+                <h3>Autonomous Obstacle Avoiding Exploring Robot - AOAVER</h3>
               </li>
               <li
                 class="md:flex md:justify-between md:font-thin text-[#383838]"
               >
-                CSE499: Capstone Design Project, North South University
+                <h4>CSE499: Capstone Design Project, North South University</h4>
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Summer 2021 — Spring 2022
+                <h4>Summer 2021 — Fall 2021</h4>
               </li>
               <li class="text-[#383838] font-thin space-y-1">
                 <p>
@@ -264,15 +251,52 @@
               </li>
             </ul>
 
+            <!-- Shouhardo -->
             <ul class="pb-6 space-y-1">
               <li class="md:flex md:justify-between font-[600]">
-                Assist seniors and disabled with hand gesture recognition
+                <h3>
+                  Shouhardo: A Web-Based Solution for Improving Hospital
+                  Accessibility and Transparency Through User-Centered Design
+                  during Covid-19
+                </h3>
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                CSE299: Junior Design Course, North South University
+                <h4>CSE498R: Directed Research</h4>
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Spring 2020
+                <h4>Fall 2021</h4>
+              </li>
+              <li class="text-[#383838] font-thin space-y-1">
+                <p>
+                  <b class="underline">Description:</b>
+                  A qualitative study during the later phase of COVID-19 with 32
+                  participants revealed major challenges for patients, including
+                  unclear hospital information, inflated medicine costs, and
+                  difficulty finding the right doctor. To address these issues,
+                  we developed an HCI-based multilingual web platform that
+                  delivers accurate guidance, service details, and doctor
+                  availability, enhancing accessibility and empowering patients
+                  to make informed healthcare decisions.
+                </p>
+                <p>
+                  <b class="underline">Tech used:</b>
+                  HTML, Vanilla CSS, WordPress
+                </p>
+              </li>
+            </ul>
+
+            <!-- Hand Gesture -->
+            <ul class="pb-6 space-y-1">
+              <li class="md:flex md:justify-between font-[600]">
+                <h3>
+                  Assist Seniors and Disabled with Hand Gesture Recognition
+                </h3>
+              </li>
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
+                <h4>CSE299: Junior Design Course, North South University</h4>
+              </li>
+              <li class="md:flex md:justify-between font-thin text-[#383838]">
+                <h4>Spring 2020</h4>
               </li>
               <li class="text-[#383838] font-thin space-y-1">
                 <p>
@@ -338,11 +362,13 @@
                 >
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Special proceddings, April 2022
+                <h4>Special proceddings, April 2022</h4>
               </li>
               <li class="font-thin text-[#383838]">
-                <span class="underline">Conference:</span> 6th Asian CHI
-                Symposium 2022 - At: New Orleans, LA
+                <h4>
+                  <span class="underline">Conference:</span> 6th Asian CHI
+                  Symposium 2022 - At: New Orleans, LA
+                </h4>
               </li>
               <li class="text-[#383838] font-thin space-y-1">
                 <p>
@@ -357,7 +383,7 @@
               </li>
 
               <li class="break-words max-w-full md:px-0">
-                <span class="underline">DOI:</span>
+                <span class="underline">ISBN:</span>
                 <a
                   href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
                   target="_blank"
@@ -378,11 +404,13 @@
                 >
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                June 2020
+                <h4>June 2020</h4>
               </li>
               <li class="font-thin text-[#383838]">
-                <span class="underline">Journal:</span> Vietnam Journal of
-                Computer Science
+                <h4>
+                  <span class="underline">Journal:</span> Vietnam Journal of
+                  Computer Science
+                </h4>
               </li>
               <li class="text-[#383838] font-thin space-y-1">
                 <p>
@@ -414,11 +442,13 @@
                 </a>
               </li>
               <li class="md:flex md:justify-between font-thin text-[#383838]">
-                March 2020
+                <h4>March 2020</h4>
               </li>
               <li class="font-thin text-[#383838]">
-                <span class="underline">Conference:</span> 12th Asian
-                Conference, ACIIDS 2020, Phuket, Thailand
+                <h4>
+                  <span class="underline">Conference:</span> 12th Asian
+                  Conference, ACIIDS 2020, Phuket, Thailand
+                </h4>
               </li>
               <li class="text-[#383838] font-thin space-y-1">
                 <p>
@@ -461,5 +491,7 @@
         ><a href="/about">About</a></span
       >
     </div>
+
+    <script src="scripts\script.js"></script>
   </body>
 </html>

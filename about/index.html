@@ -16,46 +16,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
-    <style>
-      /* Chrome, Safari, Opera */
-      html::-webkit-scrollbar,
-      body::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
 
-      /* Optional: class to hide scrollbar on a specific element */
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-
-      .no-scrollbar::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
-
-      body {
-        font-family: "JetBrains Mono", monospace;
-        -ms-overflow-style: none;
-        /* IE and older Edge */
-        scrollbar-width: none;
-        /* Firefox */
-      }
-
-      p {
-        font-size: 15px;
-      }
-
-      li {
-        font-size: 15px;
-      }
-    </style>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body
     class="flex flex-col min-h-screen text-[#383838] overflow-auto no-scrollbar"
   >
+    <!-- Night mode button -->
+    <button id="toggleDark">🌙</button>
     <div class="container mx-auto flex-grow">
       <!-- Image + Name with Home/About under the name -->
       <div class="flex flex-col items-center mt-[64px] px-4 md:px-0">
@@ -71,7 +40,7 @@
           <div
             class="flex flex-col items-center md:items-start text-center md:text-left"
           >
-            <h1 class="text-[24px] font-extrabold text-[#102E50]">
+            <h1 class="text-[24px] font-extrabold text-black">
               Nasim Mahmud Mishu
             </h1>
             <ul
@@ -98,26 +67,28 @@
       </div>
 
       <!-- Social Links -->
-      <div class="flex justify-center gap-1.5 md:mb-12 mt-6 text-[#383838]">
-        <span>Find me on</span>
-        <a
-          href="https://www.linkedin.com/in/nasim-mahmud/"
-          target="=_blank"
-          class="text-black-500 hover:underline hover:text-[#660000]"
-          ><i class="fa-brands fa-square-linkedin"></i></a
-        >,
-        <a
-          href="https://github.com/Nasim-Mahmud"
-          target="=_blank"
-          class="text-black-500 hover:underline hover:text-[#660000]"
-          ><i class="fa-brands fa-github"></i></a
-        >, and
-        <a
-          href="mailto:nasimmahmud1301@gmail.com"
-          target="=_blank"
-          class="text-black-500 hover:underline hover:text-[#660000]"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+      <div>
+        <p class="flex justify-center gap-1.5 md:mb-12 mt-6 text-[#383838]">
+          <span>Find me on</span>
+          <a
+            href="https://www.linkedin.com/in/nasim-mahmud/"
+            target="=_blank"
+            class="text-black-500 hover:underline hover:text-[#660000]"
+            ><i class="fa-brands fa-square-linkedin"></i></a
+          >,
+          <a
+            href="https://github.com/Nasim-Mahmud"
+            target="=_blank"
+            class="text-black-500 hover:underline hover:text-[#660000]"
+            ><i class="fa-brands fa-github"></i></a
+          >, and
+          <a
+            href="mailto:nasimmahmud1301@gmail.com"
+            target="=_blank"
+            class="text-black-500 hover:underline hover:text-[#660000]"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </p>
       </div>
 
       <!-- Content Grid -->
@@ -153,25 +124,46 @@
                 <a
                   href="https://en.wikipedia.org/wiki/Butterfly_effect"
                   target="_blank"
-                  ><u>"The butterfly effect",</u></a
+                  class="text-[#660000] hover:underline"
+                  >"The butterfly effect",</a
                 >
                 this fascination inspired him to write a
                 <a
                   href="https://medium.com/@NasimMahmud/বাটারফ্লাই-ইফেক্ট-ও-ভবিষ্যতের-অ-আ-ক-খ-bdea98d3fce6"
                   target="_blank"
-                  ><u> short story</u></a
+                  class="text-[#660000] hover:underline"
+                >
+                  short story</a
                 >
                 about it a few years ago.
               </p>
             </div>
-            <div
+
+            <!-- <div
               class="mt-0 mb-6 md:mt-10 md:ml-6 md:max-w-[30%] flex-shrink-0 self-center md:self-start w-40 h-40 md:w-full md:h-auto"
             >
               <img
+                id="profilePic"
                 src="/img/me.png"
                 alt="Profile Picture"
-                class="rounded-full w-full h-full object-cover"
+                class="rounded-full w-full h-full object-cover cursor-pointer"
               />
+            </div> -->
+            <div
+              class="mt-0 mb-6 md:mt-10 md:ml-6 md:max-w-[30%] flex-shrink-0 self-center md:self-start w-40 h-40 md:w-full md:h-auto relative group"
+            >
+              <img
+                id="profilePic"
+                src="/img/me.png"
+                alt="Profile Picture"
+                class="rounded-full w-full h-full object-cover cursor-pointer"
+              />
+              <!-- Round banner covering entire pic on hover -->
+              <div
+                class="absolute inset-0 bg-black bg-opacity-20 rounded-full flex items-center justify-center text-white text-center text-sm opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                That's me, on the left!
+              </div>
             </div>
           </div>
 
@@ -181,6 +173,37 @@
               Research & Experience
             </h2>
 
+            <!-- Research Assistant -->
+            <ul class="pb-6 space-y-1">
+              <li class="flex flex-col md:flex-row justify-between font-[600]">
+                <span id>Research assistant</span>
+                <span class="md:ml-4">2024- Present</span>
+              </li>
+              <li class="font-thin text-[#383838]">
+                NSU Intelligent Robotics (NIRO) Laboratory
+              </li>
+              <li class="font-thin text-[#383838]">
+                Dept. of ECE, North South University, Dhaka, Bangladesh
+              </li>
+              <li class="font-thin">
+                <p>
+                  <b class="text-[#383838] underline">Research Area:</b>
+                  Swarm robotics with a focus on centralized and decentralized
+                  control systems. <br />
+                  This project is supervised by
+                  <span
+                    ><a
+                      href="https://ece.northsouth.edu/people/dr-shahnewaz-siddique/"
+                      target="_blank"
+                      class="text-[#660000] hover:underline"
+                      >Dr. Shahnewaz Siddique</a
+                    >.</span
+                  >
+                </p>
+              </li>
+            </ul>
+
+            <!-- Teaching assistant -->
             <ul class="pb-6 space-y-1">
               <li class="flex flex-col md:flex-row justify-between font-[600]">
                 <span>Teaching assistant</span>
@@ -219,29 +242,10 @@
               </li>
             </ul>
 
-            <ul class="pb-6 space-y-1">
-              <li class="flex flex-col md:flex-row justify-between font-[600]">
-                <span>Research assistant</span>
-                <span class="md:ml-4">2024- Present</span>
-              </li>
-              <li class="font-thin text-[#383838]">
-                NSU Intelligent Robotics (NIRO) Laboratory
-              </li>
-              <li class="font-thin text-[#383838]">
-                Dept. of ECE, North South University, Dhaka, Bangladesh
-              </li>
-              <li class="font-thin">
-                <p>
-                  <b class="text-[#383838] underline">Research Area:</b>
-                  Swarm robotics with a focus on centralized and decentralized
-                  control systems.
-                </p>
-              </li>
-            </ul>
-
+            <!-- Part-time research assistant -->
             <ul class="space-y-1">
               <li class="flex flex-col md:flex-row justify-between font-[600]">
-                <span>Part-time research assistant</span>
+                <span>Research Assistant (part-time)</span>
                 <span class="md:ml-4">2023- 2024</span>
               </li>
               <li class="font-thin text-[#383838]">
@@ -252,7 +256,15 @@
                   <b class="text-[#383838] underline">Research Area:</b>
                   Resource-efficient visual Deep Reinforcement Learning (DRL)
                   for autonomous <br />
-                  agents and robots.
+                  agents and robots. This project was supervised by
+                  <span
+                    ><a
+                      href="https://ece.northsouth.edu/people/dr-shahnewaz-siddique/"
+                      target="_blank"
+                      class="text-[#660000] hover:underline"
+                      >Dr. Shahnewaz Siddique</a
+                    >.</span
+                  >
                 </p>
               </li>
             </ul>
@@ -441,5 +453,30 @@
         ><a href="/about">About</a></span
       >
     </div>
+
+    <!-- Fullscreen overlay container -->
+    <div
+      id="fullscreenOverlay"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <img
+        id="fullscreenImage"
+        src="/img/me.png"
+        alt="Profile Picture Fullscreen"
+        style="max-width: 90vw; max-height: 90vh; object-fit: contain"
+      />
+    </div>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>

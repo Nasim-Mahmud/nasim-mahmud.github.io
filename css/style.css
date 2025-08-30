@@ -1,0 +1,81 @@
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Optional: class to hide scrollbar on a specific element */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+p,
+li {
+  font-size: 15px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode h3,
+.dark-mode a {
+  color: #c8eb00 !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h4,
+.dark-mode span,
+.dark-mode .font-thin,
+.dark-mode p,
+.dark-mode .pr-2,
+.dark-mode .pr-4 {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-[#383838],
+.dark-mode .text-black,
+.dark-mode .text-black-500 {
+  color: #ffffff !important;
+}
+
+.dark-mode .text-[#660000] {
+  color: #ff9999 !important;
+}
+
+.dark-mode .bg-white {
+  background-color: #000000 !important;
+}
+
+/* Toggle button */
+#toggleDark {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  background: #383838;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+#toggleDark:hover {
+  background: #ffffff;
+}
