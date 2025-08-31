@@ -34,7 +34,8 @@ li {
 }
 
 .dark-mode h3,
-.dark-mode a {
+.dark-mode a,
+.dark-mode .font-semibold {
   color: #c8eb00 !important;
 }
 
@@ -47,7 +48,7 @@ li {
 .dark-mode h4,
 .dark-mode span,
 .dark-mode .font-thin,
-.dark-mode p {
+.dark-mode p, .dark-mode b {
   color: #ffffff !important;
 }
 
