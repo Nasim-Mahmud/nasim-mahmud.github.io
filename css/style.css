@@ -38,14 +38,16 @@ li {
   color: #c8eb00 !important;
 }
 
+.dark-mode .border-\[\#660000\] {
+  border-color: #ffffff !important;
+}
+
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h4,
 .dark-mode span,
 .dark-mode .font-thin,
-.dark-mode p,
-.dark-mode .pr-2,
-.dark-mode .pr-4 {
+.dark-mode p {
   color: #ffffff !important;
 }
 
