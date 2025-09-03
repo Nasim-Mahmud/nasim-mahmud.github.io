@@ -96,77 +96,6 @@
         <!-- DON'T DELETE -->
         <div class="md:col-span-2 bg-white rounded"></div>
         <div class="md:col-span-8 p-4 rounded">
-          <!-- Overview -->
-          <div
-            class="pb-10 flex flex-col-reverse md:flex-row md:justify-between md:items-start"
-          >
-            <div class="md:max-w-[70%]">
-              <h2 class="text-[24px] font-bold text-[#660000] pb-4">
-                Overview
-              </h2>
-              <p class="font-thin text-[#383838]">
-                He is a researcher passionate about building intelligent
-                machines that work together to solve complex problems. His
-                projects span from disaster response robots to assistive
-                technologies, combining innovation, teamwork, and a drive to
-                create systems that adapt to real-world challenges. Currently,
-                he is researching swarm robotics with a focus on both
-                centralized and decentralized control systems.
-              </p>
-              <br />
-              <p>
-                In his personal life, he enjoys playing football and collecting
-                coins, with a particular fondness for the colors cyan and teal.
-                During leisure time, he engages in deep discussions about games
-                with his father. Although he does not have a favorite flower, he
-                finds butterflies unpredictable and frightening, yet is
-                fascinated by the concept of
-                <a
-                  href="https://en.wikipedia.org/wiki/Butterfly_effect"
-                  target="_blank"
-                  class="text-[#660000] hover:underline"
-                  >"The butterfly effect",</a
-                >
-                this fascination inspired him to write a
-                <a
-                  href="https://medium.com/@NasimMahmud/বাটারফ্লাই-ইফেক্ট-ও-ভবিষ্যতের-অ-আ-ক-খ-bdea98d3fce6"
-                  target="_blank"
-                  class="text-[#660000] hover:underline"
-                >
-                  short story</a
-                >
-                about it a few years ago.
-              </p>
-            </div>
-
-            <!-- <div
-              class="mt-0 mb-6 md:mt-10 md:ml-6 md:max-w-[30%] flex-shrink-0 self-center md:self-start w-40 h-40 md:w-full md:h-auto"
-            >
-              <img
-                id="profilePic"
-                src="/img/me.png"
-                alt="Profile Picture"
-                class="rounded-full w-full h-full object-cover cursor-pointer"
-              />
-            </div> -->
-            <div
-              class="mt-0 mb-6 md:mt-10 md:ml-6 md:max-w-[30%] flex-shrink-0 self-center md:self-start w-40 h-40 md:w-full md:h-auto relative group"
-            >
-              <img
-                id="profilePic"
-                src="/img/me.png"
-                alt="Profile Picture"
-                class="rounded-full w-full h-full object-cover cursor-pointer"
-              />
-              <!-- Round banner covering entire pic on hover -->
-              <div
-                class="absolute inset-0 bg-black bg-opacity-20 rounded-full flex items-center justify-center text-white text-center text-sm opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
-              >
-                That's me, on the left!
-              </div>
-            </div>
-          </div>
-
           <!-- Research & Experience -->
           <div class="pb-10">
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">
@@ -217,11 +146,13 @@
                   <b class="underline mr-2">Course:</b>
                   <div>
                     <div class="flex flex-col md:flex-row md:gap-4">
-                      <span class="w-28 md:w-24 block">Spring'25</span>
+                      <!-- <span class="w-28 md:w-24 block">Spring'25</span> -->
+                      Spring'25
                       <span>(EE494/ CSE495A: Introduction to robotics)</span>
                     </div>
                     <div class="flex flex-col md:flex-row md:gap-4">
-                      <span class="w-28 md:w-24 block">Summer'25</span>
+                      <!-- <span class="w-28 md:w-24 block">Summer'25</span> -->
+                      Summer'25
                       <span
                         >(EE494/ CSE495A, CSE543: Introduction to
                         robotics)</span
@@ -378,7 +309,7 @@
           </div>
 
           <!-- Technical skills -->
-          <div class="pb-10">
+          <!-- <div class="pb-10">
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">
               Technical Skills
             </h2>
@@ -432,6 +363,20 @@
                 <span class="text-[#383838]"> Git, Anaconda, LaTeX </span>
               </li>
             </ul>
+          </div> -->
+
+          <!-- Projects -->
+          <div class="pb-6">
+            <h2 class="text-[24px] font-bold text-[#660000] pb-4">Projects</h2>
+            <div id="projects-container"></div>
+          </div>
+
+          <!-- Publications -->
+          <div class="pb-10">
+            <h2 class="text-[24px] font-bold text-[#660000] pb-4">
+              Publications
+            </h2>
+            <div id="publications-container"></div>
           </div>
         </div>
         <!-- DON'T DELETE -->
@@ -452,30 +397,6 @@
       <span class="text-[#660000] hover:underline"
         ><a href="/about">About</a></span
       >
-    </div>
-
-    <!-- Fullscreen overlay container -->
-    <div
-      id="fullscreenOverlay"
-      style="
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.8);
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      "
-    >
-      <img
-        id="fullscreenImage"
-        src="/img/me.png"
-        alt="Profile Picture Fullscreen"
-        style="max-width: 90vw; max-height: 90vh; object-fit: contain"
-      />
     </div>
     <script src="../scripts/script.js"></script>
   </body>

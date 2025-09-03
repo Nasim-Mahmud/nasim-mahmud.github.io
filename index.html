@@ -95,381 +95,78 @@
         <div class="md:col-span-2 bg-white p-4 rounded"></div>
 
         <div class="md:col-span-8 p-4 rounded">
+          <!-- Overview -->
+          <div
+            class="pb-10 flex flex-col-reverse md:flex-row md:justify-between md:items-start"
+          >
+            <div class="md:max-w-[70%]">
+              <h2 class="text-[24px] font-bold text-[#660000] pb-4">
+                Overview
+              </h2>
+              <p class="font-thin text-[#383838]">
+                He is a researcher passionate about building intelligent
+                machines that work together to solve complex problems. His
+                projects span from disaster response robots to assistive
+                technologies, combining innovation, teamwork, and a drive to
+                create systems that adapt to real-world challenges. Currently,
+                he is researching swarm robotics with a focus on both
+                centralized and decentralized control systems.
+              </p>
+              <br />
+              <p>
+                Apart from his professional life, he enjoys playing football and
+                collecting coins. In spare time, he loves to engages in deep
+                discussions about games with his father. Although he does not
+                have a favorite flower, he finds butterflies unpredictable and
+                frightening, yet is fascinated by the concept of
+                <a
+                  href="https://en.wikipedia.org/wiki/Butterfly_effect"
+                  target="_blank"
+                  class="text-[#660000] hover:underline"
+                  >"The butterfly effect",</a
+                >
+                this fascination inspired him to write a
+                <a
+                  href="https://medium.com/@NasimMahmud/বাটারফ্লাই-ইফেক্ট-ও-ভবিষ্যতের-অ-আ-ক-খ-bdea98d3fce6"
+                  target="_blank"
+                  class="text-[#660000] hover:underline"
+                >
+                  short story</a
+                >
+                about it a few years ago.
+              </p>
+            </div>
+
+            <div
+              class="mt-0 mb-6 md:mt-10 md:ml-6 md:max-w-[30%] flex-shrink-0 self-center md:self-start w-40 h-40 md:w-full md:h-auto relative group"
+            >
+              <img
+                id="profilePic"
+                src="img\me.png"
+                alt="Profile Picture"
+                class="rounded-full w-full h-full object-cover cursor-pointer"
+              />
+              <!-- Round banner covering entire pic on hover -->
+              <div
+                class="absolute inset-0 bg-black bg-opacity-20 rounded-full flex items-center justify-center text-white text-center text-sm opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+              >
+                That's me, on the left!
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent news -->
+          <div class="pb-6">
+            <h2 class="text-[24px] font-bold text-[#660000] pb-4">News</h2>
+            <div id="news-container"></div>
+          </div>
+
           <!-- In progress -->
           <div class="pb-6">
             <h2 class="text-[24px] font-bold text-[#660000] pb-4">
               In progress
             </h2>
-
-            <!-- NIRO Edu Bot -->
-            <ul class="pb-6 space-y-1">
-              <li class="font-[600]">
-                <!-- Just bold text stacked at all sizes -->
-                <h3>NIRO Educational Bot</h3>
-              </li>
-              <li
-                class="md:flex md:justify-between md:font-thin text-[#383838]"
-              >
-                <h4>
-                  Research Project Funded under NSU Intelligent Robotics (NIRO)
-                  Lab
-                </h4>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>October 2024 — Present</h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  Frequent natural disasters in densely populated Bangladesh
-                  pose dangers for human exploration. To aid search and rescue,
-                  we developed AOAVER, an autonomous robot that navigates
-                  obstacles and explores disaster zones, providing invaluable
-                  assistance in hazardous situations.
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  Python, YDLidar X4, Raspberry Pi 3B+, Arduino IDE, Linux OS,
-                  ROS
-                </p>
-              </li>
-            </ul>
-            <ul class="pb-6 space-y-1">
-              <li class="font-[600]">
-                <!-- Just bold text stacked at all sizes -->
-                Lorem Ipsum
-              </li>
-              <li
-                class="md:flex md:justify-between md:font-thin text-[#383838]"
-              >
-                Lorem Ipsum
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Summer 2021 — Spring 2022
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  Lorem Ipsum
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  Lorem Ipsum
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Recent news -->
-          <div class="pb-6">
-            <h2 class="text-[24px] font-bold text-[#660000] pb-4">
-              Recent news
-            </h2>
-
-            <ul class="pb-6 space-y-1">
-              <li class="font-[600]">
-                <!-- Just bold text stacked at all sizes -->
-                Lorem Ipsum
-              </li>
-              <li
-                class="md:flex md:justify-between md:font-thin text-[#383838]"
-              >
-                Lorem Ipsum
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Summer 2021 — Spring 2022
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  Lorem Ipsum
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  Lorem Ipsum
-                </p>
-              </li>
-            </ul>
-            <ul class="pb-6 space-y-1">
-              <li class="font-[600]">
-                <!-- Just bold text stacked at all sizes -->
-                Lorem Ipsum
-              </li>
-              <li
-                class="md:flex md:justify-between md:font-thin text-[#383838]"
-              >
-                Lorem Ipsum
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                Summer 2021 — Spring 2022
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  Lorem Ipsum
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  Lorem Ipsum
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Projects -->
-          <div class="pb-6">
-            <h2 class="text-[24px] font-bold text-[#660000] pb-4">Projects</h2>
-
-            <!-- AOAVER -->
-            <ul class="pb-6 space-y-1">
-              <li class="font-[600]">
-                <!-- Just bold text stacked at all sizes -->
-                <h3>Autonomous Obstacle Avoiding Exploring Robot - AOAVER</h3>
-              </li>
-              <li
-                class="md:flex md:justify-between md:font-thin text-[#383838]"
-              >
-                <h4>CSE499: Capstone Design Project, North South University</h4>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>Summer 2021 — Fall 2021</h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  Frequent natural disasters in densely populated Bangladesh
-                  pose dangers for human exploration. To aid search and rescue,
-                  we developed AOAVER, an autonomous robot that navigates
-                  obstacles and explores disaster zones, providing invaluable
-                  assistance in hazardous situations.
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  Python, YDLidar X4, Raspberry Pi 3B+, Arduino IDE, Linux OS,
-                  ROS
-                </p>
-              </li>
-            </ul>
-
-            <!-- Shouhardo -->
-            <ul class="pb-6 space-y-1">
-              <li class="md:flex md:justify-between font-[600]">
-                <h3>
-                  Shouhardo: A Web-Based Solution for Improving Hospital
-                  Accessibility and Transparency Through User-Centered Design
-                  during Covid-19
-                </h3>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>CSE498R: Directed Research</h4>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>Fall 2021</h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  A qualitative study during the later phase of COVID-19 with 32
-                  participants revealed major challenges for patients, including
-                  unclear hospital information, inflated medicine costs, and
-                  difficulty finding the right doctor. To address these issues,
-                  we developed an HCI-based multilingual web platform that
-                  delivers accurate guidance, service details, and doctor
-                  availability, enhancing accessibility and empowering patients
-                  to make informed healthcare decisions.
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  HTML, Vanilla CSS, WordPress
-                </p>
-              </li>
-            </ul>
-
-            <!-- Hand Gesture -->
-            <ul class="pb-6 space-y-1">
-              <li class="md:flex md:justify-between font-[600]">
-                <h3>
-                  Assist Seniors and Disabled with Hand Gesture Recognition
-                </h3>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>CSE299: Junior Design Course, North South University</h4>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>Spring 2020</h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Description:</b>
-                  The goal of this project is to implement a low-cost,
-                  easily-affordable, and user-friendly hand gesture recognition
-                  system to help the elderly and disabled who are incapable of
-                  to move or use voice to communicate. The system will employ a
-                  phone-based app that enables users to call for assistance
-                  while standing far away by making a hand motion.
-                </p>
-                <p>
-                  <b class="underline">Tech used:</b>
-                  Python, OpenCV, Raspberry Pi 3B+, Pi-camera, Firebase, Android
-                  Studio
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Publications -->
-          <div class="pb-10">
-            <h2 class="text-[24px] font-bold text-[#660000] pb-4">
-              Publications
-            </h2>
-
-            <!-- <ul class="pb-6 space-y-1">
-              <li class="flex justify-between font-[600] hover:underline">
-                <a
-                  href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
-                  target="_blank"
-                  >Understanding the Healthcare Sector in Bangladesh:
-                  Experiences and Services during the COVID-19 Pandemic</a
-                >
-              </li>
-              <li class="flex font-thin text-[#383838] justify-between">
-                Special proceddings, April 2022
-              </li>
-              <li class="font-thin text-[#383838]">
-                <span class="underline">Conference:</span> 6th Asian CHI
-                Symposium 2022 - At: New Orleans, LA
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Summary:</b>
-                  This study explores the healthcare challenges faced by
-                  Bangladeshis, exacerbated by the COVID-19 pandemic, through
-                  interviews with 32 individuals. It identifies issues like
-                  difficulty finding doctors and lack of medication price
-                  transparency, suggesting online platforms as potential
-                  solutions.
-                </p>
-              </li>
-              <li><span class="underline">ISBN:</span> 978-0-9942763-2-2</li>
-            </ul> -->
-            <ul class="pb-6 space-y-1 mx-auto">
-              <li class="md:flex md:justify-between font-[600] hover:underline">
-                <a
-                  href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
-                  target="_blank"
-                  >Understanding the Healthcare Sector in Bangladesh:
-                  Experiences and Services during the COVID-19 Pandemic</a
-                >
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>Special proceddings, April 2022</h4>
-              </li>
-              <li class="font-thin text-[#383838]">
-                <h4>
-                  <span class="underline">Conference:</span> 6th Asian CHI
-                  Symposium 2022 - At: New Orleans, LA
-                </h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Summary:</b>
-                  This study explores the healthcare challenges faced by
-                  Bangladeshis, exacerbated by the COVID-19 pandemic, through
-                  interviews with 32 individuals. It identifies issues like
-                  difficulty finding doctors and lack of medication price
-                  transparency, suggesting online platforms as potential
-                  solutions.
-                </p>
-              </li>
-
-              <li class="break-words max-w-full md:px-0">
-                <span class="underline">ISBN:</span>
-                <a
-                  href="https://drive.google.com/file/d/1ifFX5Vd1_dNN7jzyPAT1Wl0iYt5vI1YH/view"
-                  target="_blank"
-                  class="text-[#660000] hover:underline"
-                >
-                  978-0-9942763-2-2
-                </a>
-              </li>
-            </ul>
-
-            <ul class="pb-6 space-y-1 mx-auto">
-              <li class="md:flex md:justify-between font-[600] hover:underline">
-                <a
-                  href="https://www.worldscientific.com/doi/10.1142/S2196888820500219"
-                  target="_blank"
-                  >Alpha-N-V2: Shortest Path Finder Automated Delivery Robot
-                  with Obstacle Detection and Avoiding System</a
-                >
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>June 2020</h4>
-              </li>
-              <li class="font-thin text-[#383838]">
-                <h4>
-                  <span class="underline">Journal:</span> Vietnam Journal of
-                  Computer Science
-                </h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Summary:</b>
-                  Building on Alpha-N, Alpha-N-V2 enhances self-driving delivery
-                  with advanced obstacle detection and path planning. RFID tags
-                  guide its route and calibrate its position, while Dijkstra’s
-                  algorithm ensures the fastest path. Faster R-CNN and VGGNet-16
-                  power its obstacle avoidance, making deliveries safer and more
-                  efficient.
-                </p>
-              </li>
-              <li class="break-words max-w-full md:px-0">
-                <span class="underline">DOI:</span>
-                <a
-                  href="https://doi.org/10.1142/S2196888820500219"
-                  target="_blank"
-                  class="text-[#660000] hover:underline"
-                >
-                  https://doi.org/10.1142/S2196888820500219
-                </a>
-              </li>
-            </ul>
-
-            <ul class="pb-6 space-y-1 mx-auto">
-              <li class="md:flex md:justify-between font-[600] hover:underline">
-                <a href="https://arxiv.org/abs/2002.11913" target="_blank">
-                  Alpha-N: Shortest Path Finder Automated Delivery Robot
-                </a>
-              </li>
-              <li class="md:flex md:justify-between font-thin text-[#383838]">
-                <h4>March 2020</h4>
-              </li>
-              <li class="font-thin text-[#383838]">
-                <h4>
-                  <span class="underline">Conference:</span> 12th Asian
-                  Conference, ACIIDS 2020, Phuket, Thailand
-                </h4>
-              </li>
-              <li class="text-[#383838] font-thin space-y-1">
-                <p>
-                  <b class="underline">Summary:</b>
-                  Alpha-N represents a significant advancement in autonomous
-                  delivery robots. Its ability to navigate efficiently, avoid
-                  obstacles, and accurately locate itself makes it a valuable
-                  tool for safe and reliable deliveries.
-                </p>
-              </li>
-              <li class="break-words max-w-full md:px-0">
-                <span class="underline">DOI:</span>
-                <a
-                  href="https://doi.org/10.1007/978-3-030-41964-6_18"
-                  target="_blank"
-                  class="text-[#660000] hover:underline"
-                >
-                  https://doi.org/10.1007/978-3-030-41964-6_18
-                </a>
-              </li>
-            </ul>
+            <div id="inprogress-container"></div>
           </div>
         </div>
 
@@ -490,6 +187,29 @@
       <span class="text-[#660000] hover:underline"
         ><a href="/about">About</a></span
       >
+    </div>
+    <!-- Fullscreen overlay container -->
+    <div
+      id="fullscreenOverlay"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <img
+        id="fullscreenImage"
+        src="/img/me.png"
+        alt="Profile Picture Fullscreen"
+        style="max-width: 90vw; max-height: 90vh; object-fit: contain"
+      />
     </div>
 
     <script src="scripts\script.js"></script>
