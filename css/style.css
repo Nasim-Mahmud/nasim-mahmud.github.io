@@ -35,7 +35,8 @@ li {
 
 .dark-mode h3,
 .dark-mode a,
-.dark-mode .font-semibold {
+.dark-mode .font-semibold,
+.dark-mode .font-extrabold {
   color: #c8eb00 !important;
 }
 
